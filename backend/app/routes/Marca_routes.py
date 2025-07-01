@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from app.controlllers._controller import MarcaController
+from backend.app.controlllers.Marca_controller import MarcaController
 
 marca_bp = Blueprint("marca_bp", __name__)
 
