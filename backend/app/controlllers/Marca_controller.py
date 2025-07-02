@@ -1,4 +1,4 @@
-from backend.app.models.Marca_model import MarcaModel
+from app.models.Marca_model import MarcaModel
 
 class MarcaController:
 
