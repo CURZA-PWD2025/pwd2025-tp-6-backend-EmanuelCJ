@@ -10,4 +10,10 @@ def create_app():
     app.register_blueprint(proveedor_bp, url_prefix="/proveedores")
     app.register_blueprint(categoria_bp, url_prefix="/categorias")
     app.register_blueprint(articulo_bp, url_prefix="/articulos")
+
+    @app.route("/")
+    def home():
+        return "Bienvenido a la API de la tienda informática de EmanuelCJ"
+
+    
     return app
